@@ -1,0 +1,27 @@
+.Main {
+    position: relative;
+
+    .itm {
+        position: relative;
+        height: 700px;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1170px;
+    }
+
+    @for $i from 1 through 3 {
+        .itm0#{$i} {
+            background: url(../../public/assets/img/main_visual0#{$i}.jpg)no-repeat center center/cover;
+        }
+    }
+
+    .itm.on {
+        color: #fff;
+        transition: 1s;
+    }
+}
